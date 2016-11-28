@@ -73,7 +73,7 @@ echo "**** Setting Build Number ****"
 NUMBER=$(cat number)
 INCREMENT=$(expr $NUMBER + 1)
 sed -i s/$NUMBER/$INCREMENT/g $KERNEL_DIR/number
-FINAL_KERNEL_ZIP=Ruthless-build$INCREMENT-R$VERSION.zip
+FINAL_KERNEL_ZIP=Kernel-build$INCREMENT-R$VERSION.zip
 
 ## Make sure we have a map for output zip
 if [ ! -d "$BUILDS" ]
